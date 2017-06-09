@@ -288,10 +288,10 @@
           <h1 id="selenium-webdriver">Selenium WebDriver</h1>
 
 <h2 id="refresh-a-page">Refresh a Page</h2>
-
-<p>In Selenium Web Driver, if you want to refresh the current page, you can use the refresh() method as shown below.</p>
 <pre class="highlight java tab-java"><code><span class="n">driver</span><span class="o">.</span><span class="na">nagivate</span><span class="o">().</span><span class="na">refresh</span><span class="o">();</span>
 </code></pre>
+<p>In Selenium Web Driver, if you want to refresh the current page, you can use the refresh() method as shown below.</p>
+
 <p>Also there are 3 other ways to refresh the page as shown below.</p>
 
 <h3 id="by-sending-f5-key-to-refresh-the-browser">By sending F5 key to refresh the browser</h3>
@@ -308,16 +308,16 @@
 <h2 id="javascript-executor">Javascript Executor</h2>
 
 <h3 id="changing-attributes-using-javascript">Changing attributes using JavaScript</h3>
-
-<p>Previously, we saw how to execute JavaScript code from Web Driver. If you have not checked it before, check it now here.</p>
-
-<p>JavascriptExecutor can also modify your element&rsquo;s property. It&rsquo;s just the same JavaScript code but you have them run via Selenium.</p>
-
-<p>For example, the below code changes the value of a textbox. It&rsquo;s the equivalent of using sendKeys() method on the WebElement object.</p>
 <pre class="highlight java tab-java"><code><span class="n">JavascriptExecutor</span> <span class="n">js</span> <span class="o">=</span> <span class="o">(</span><span class="n">JavascriptExecutor</span><span class="o">)</span> <span class="n">driver</span><span class="o">;</span>
 
 <span class="n">js</span><span class="o">.</span><span class="na">executeScript</span><span class="o">(</span><span class="s">"document.getElementsByName('childrens')[0].setAttribute('value', 'Child1');"</span><span class="o">);</span>
 </code></pre>
+<p>Previously, we saw how to execute JavaScript code from Web Driver. If you have not checked it before, check it now here.</p>
+
+<p>JavascriptExecutor can also modify your element&rsquo;s property. It&rsquo;s just the same JavaScript code but you have them run via Selenium.</p>
+
+<p>For example, the provided code changes the value of a textbox. It&rsquo;s the equivalent of using sendKeys() method on the WebElement object.</p>
+
 <p><strong>Arguments for JavaScript execution</strong>:</p>
 
 <p>In the above examples, we saw executing some simple JavaScript statements. In some cases, we might need to pass some dynamic values to the script. For those instances, we can pass the values as arguments to the script executor.</p>
