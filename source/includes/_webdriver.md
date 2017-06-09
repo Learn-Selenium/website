@@ -1,11 +1,12 @@
 # Selenium WebDriver
 
 ## Refresh a Page
-In Selenium Web Driver, if you want to refresh the current page, you can use the refresh() method as shown below.
 
 ```java
 driver.nagivate().refresh();
 ```
+
+In Selenium Web Driver, if you want to refresh the current page, you can use the refresh() method as shown below.
 
 Also there are 3 other ways to refresh the page as shown below.
 
@@ -33,17 +34,17 @@ The difference between navigate().to() and get() method is that to() will not wa
 
 ### Changing attributes using JavaScript
 
-Previously, we saw how to execute JavaScript code from Web Driver. If you have not checked it before, check it now here.
-
-JavascriptExecutor can also modify your element's property. It's just the same JavaScript code but you have them run via Selenium.
-
-For example, the below code changes the value of a textbox. It's the equivalent of using sendKeys() method on the WebElement object.
-
 ```java
 JavascriptExecutor js = (JavascriptExecutor) driver;
  
 js.executeScript("document.getElementsByName('childrens')[0].setAttribute('value', 'Child1');");
 ```
+
+Previously, we saw how to execute JavaScript code from Web Driver. If you have not checked it before, check it now here.
+
+JavascriptExecutor can also modify your element's property. It's just the same JavaScript code but you have them run via Selenium.
+
+For example, the provided code changes the value of a textbox. It's the equivalent of using sendKeys() method on the WebElement object.
 
 **Arguments for JavaScript execution**:
 
